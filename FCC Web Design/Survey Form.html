@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="D:\.VScode\FCC Web Design\Survey Form.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Self-Taught Coding Experience Form</h1>
+      <p id="description" class="description text-center">Thank you for taking the time to fill out this survey</p>
+    </header>
+    <form id="survey-form">
+
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input type="number" name="age" id="number" min="5" max="65" class="form-control" placeholder="Age" required />
+      </div>
+
+      <div class="form-group">
+        <p>What is your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="jobseeker">Jobseeker</option>
+          <option value="employee">Employee</option>
+          <option value="freelancer">Freelancer</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>How often do you find it difficult when self-taught coding?</p>
+        <label>
+          <input name="user-difficulties" value="almost" type="radio" class="input-radio" checked />Almost</label>
+        <label>
+          <input name="user-difficulties" value="sometimes" type="radio" class="input-radio" />Sometimes</label>
+        <label>
+          <input name="user-difficulties" value="Rarely" type="radio" class="input-radio" />Rarely</label>
+      </div>
+
+      <div class="form-group">
+        <p>What is your reason doing self-taught coding?<span class="clue"></span></p>
+        <label>
+          <input name="reason" value="just-fill-free-time" type="checkbox" class="input-checkbox" />Just fill free
+          time</label>
+        <label>
+          <input name="reason" value="learn-additional-skill" type="checkbox" class="input-checkbox" />Learn additional
+          skill</label>
+        <label>
+          <input name="reason" value="want-programmer-career" type="checkbox" class="input-checkbox" />Want programmer
+          career</label>
+        <label>
+          <input name="reason" value="find-community" type="checkbox" class="input-checkbox" />Find community</label>
+        <label>
+          <input name="prefer" value="for-self-challenge" type="checkbox" class="input-checkbox" />For
+          self-challenge</label>
+      </div>
+
+      <div class="form-group">
+        <p>Any suggestions for anyone wanna self-taught coding?</p>
+        <textarea id="suggestions" class="input-textarea" name="suggestions"
+          placeholder="Input your text here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>
